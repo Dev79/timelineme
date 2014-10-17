@@ -1451,7 +1451,7 @@ section.bespoke-active {
 .timelinepath{
 	left:110%;/*stack order, 4vR*/
 	position:fixed;
-	z-index:-15!important;/*stack order, 4vR*/ 
+	z-index:-10!important;/*stack order, 4vR*/ 
 }
 
 .timelinepath:before{
