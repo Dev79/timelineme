@@ -1486,7 +1486,7 @@ section.bespoke-active {
 .no-csstransforms3d .timelinepath:before{
 	width:80%;
 	height:100%;
-	background:#000;
+	background:#fff;
 	opacity:0.3;
 	margin-left:10%;
 	bottom:0%;
@@ -2349,7 +2349,7 @@ ol.tags li a{
 	height: 0px;
 	border-style: solid;
 	border-width: 44px 15px 0 15px;
-	border-color: rgba(0,0,0,0.5) transparent transparent transparent;
+	border-color: rgba(0,0,0,0.5) transparent transparent transparent;/*black*/
 }
 .center-content .tt-arrow-side{
 	position:absolute;
@@ -2361,20 +2361,20 @@ ol.tags li a{
 	height: 0px;
 	border-style: solid;
 	border-width: 20px 15px 0 15px;
-	border-color: rgba(0,0,0,0.5) transparent transparent transparent;
+	border-color: rgba(0,0,0,0.5) transparent transparent transparent;/*black*/
 }
 .tt-arrow-side.iswhite{
-	border-color: rgba(0,0,0,0.5) transparent transparent transparent!important;
+	border-color: rgba(0,0,0,0.5) transparent transparent transparent!important;/*black*/
 }
 .is-circle .tt-arrow-side {
-	border-color: rgba(0,0,0,0.5) transparent transparent transparent!important;
+	border-color: rgba(0,0,0,0.5) transparent transparent transparent!important;/*black -4vR*/
 	z-index:-1;
 }
 /*####################################################*/
 /*** TURQUOISE COLOR SCHEME ***/
 /*####################################################*/
 .turquoise .tt-arrow-dot{
-	background:rgba(82,204,179, 0.2)!important;
+	background:rgba(82,204,179, 0.2)!important; /*that greenish color - 4vR*/
 }
 .turquoise .tt-arrow-dot:after{
 	background:rgba(82,204,179, 0.1)!important;
@@ -2624,6 +2624,7 @@ ul ul .greensea.current_page_item, ul li .greensea.current-menu-item, .nav ul li
 /*####################################################*/
 /*** EMERALD COLOR SCHEME ***/ 
 /*####################################################*/
+/* i don't like the color emerald - 4vR, uncomment for use
 .emerald .tt-arrow-dot{
 	background:rgba(95,216,146, 0.2)!important;
 }
@@ -2746,10 +2747,12 @@ ul ul .emerald.current_page_item, ul li .emerald.current-menu-item, .nav ul li.e
 .emerald .no-content {
 	border-bottom: 3px solid rgba(95,216,146, 0.8);
 }
+*/
+
 /*####################################################*/
-/*** NEPHRITIS COLOR SCHEME ***/  
+/*** NEPHRITIS COLOR SCHEME - sorta green, dnt lyk it, 4vR***/  
 /*####################################################*/
-.nephritis .tt-arrow-dot{
+/*.nephritis .tt-arrow-dot{
 	background:rgba(91,193,135, 0.2)!important;
 }
 .nephritis .tt-arrow-dot:after{
@@ -2871,6 +2874,8 @@ ul ul .nephritis.current_page_item, ul li .nephritis.current-menu-item, .nav ul 
 .nephritis .no-content {
 	border-bottom: 3px solid rgba(91,193,135, 0.8);
 }
+*/
+
 /*####################################################*/
 /*** AMETHYST COLOR SCHEME ***/ 
 /*####################################################*/
@@ -3875,29 +3880,29 @@ ul ul .pumpkin.current_page_item, ul li .pumpkin.current-menu-item, .nav ul li.p
 	border-bottom: 3px solid rgba(221,125,60, 0.8);
 }
 /*####################################################*/
-/*** WET ASPHALT COLOR SCHEME ***/ 
+/*** WET ASPHALT COLOR SCHEME  TASIRA PANO 4VR FRIDAY, white issue, major blue***/ 
 /*####################################################*/
 .wetasphalt .tt-arrow-dot{
-	background:rgba(101,117,133, 0.2)!important;
+	background:rgba(0,0,255,0.3)!important;/*101,117,133, 0.2, grey*/
 }
 .wetasphalt .tt-arrow-dot:after{
-	background:rgba(101,117,133, 0.1)!important;
+	background:rgba(0,0,255,0.2)!important;/*0.1, 4vR*/
 }
 .wetasphalt .timedate, .wetasphalt .tt-arrow-dot:before, .wetasphalt .share-btna{
-	background: #657585;
+	background: #fff;
 }
 .wetasphalt .tt-arrow-side {
-	border-color: rgba(101,117,133, 0.8) transparent transparent transparent;
+	border-color: rgba(0,0,255,0.9) transparent transparent transparent;/*0.8, 4vR*/
 }
 .wetasphalt .widgttl, .gglass h4.wetasphalt.wpb_toggle, .gglass .wetasphalt h3.wpb_accordion_header, .gglass .wetasphalt .wpb_tabs_nav li.ui-state-active a, .gglass .wetasphalt .wpb_tab{
-	background-color: #657585!important;
+	background-color: #6666FF!important;/*657585*/
 	
 }
 .wetasphalt .share-action, .wetasphalt .sbleft .gray-container a, .disquis_h .wetasphalt a, .wetasphalt .sbright .gray-container a, .wetasphalt .widget_calendar #wp-calendar th, .wetasphalt .content-title, .wetasphalt .content-title a ,.wetasphalt #reply-title {
-	color:#657585;
+	color:#6666FF;
 }
 .wetasphalt .relatedcontent a, .iscomm .wetasphalt a, .wetasphalt .addcomm a{
-	color:#657585!important;
+	color:#6666FF!important;
 }
 .wetasphalt #commentform #submit:hover{
 	background: #394b5d!important;
@@ -3906,27 +3911,27 @@ ul ul .pumpkin.current_page_item, ul li .pumpkin.current-menu-item, .nav ul li.p
 	color:#394b5d!important;
 }
 .wetasphalt .gray-container, .wetasphalt .ch-grid .share-action, .wetasphalt.slider {
-	background: #657585!important;
-	background: rgba(101,117,133, 0.8)!important;
+	background: #6666FF!important;
+	background: rgba(0,0,255,0.9)!important;
 }
 .wetasphalt #tt-h-one .gray-container{
 	background:none!important;
 }
 .wetasphalt .tt-content-bg{
-	background: rgba(101,117,133, 0.8);
+	background: rgba(0,0,255,0.9);
 }
 .wetasphalt .gray-container a, .wetasphalt .gray-container, .comment-nav-below a{
-	color: #fff;
+	color: #6666FF;
 }
 .wetasphalt .hover-effect a{
-	color: #657585!important;
+	color: #6666FF!important;
 	font-weight:300!important;
 }
 .wetasphalt .time-holder, .wetasphalt .cat-holder, .wetasphalt .user-holder{
-	border-color:rgba(101,117,133, 0.3);
+	border-color:rgba(0,0,255,0.4);/*0.3*/
 }
 .wetasphalt .share-action {
-	border-left-color: rgba(101,117,133, 0.3);
+	border-left-color: rgba(0,0,255,0.4);
 }
 .wetasphalt ol.forms li.buttons button{
 	border-color: #fff!important;
@@ -3938,7 +3943,7 @@ ul ul .pumpkin.current_page_item, ul li .pumpkin.current-menu-item, .nav ul li.p
 	border-color: rgba(101,117,133, 0.3);
 }
 .wetasphalt .share-btn a:hover{
-	color:#fff!important;
+	color:#6666FF!important;
 }
 .wetasphalt .sbleft .widget_shopping_cart .button, .wetasphalt .sbright .widget_shopping_cart .button{
 	border-color:#657585!important;
@@ -4638,7 +4643,7 @@ ul ul .asbestos.current_page_item, ul li .asbestos.current-menu-item, .nav ul li
 /*** GLASS COLOR SCHEME ***/
 /*####################################################*/
 .gglass .widgttl{
-	background: rgba(0,0,0, 0.2	)!important;
+	background: rgba(0,0,0, 0.2	)!important; /*RESULT is black? weird - 4vR*/
 }
 .gglass .share-action, .gglass .sbleft .gray-container a, .gglass .sbright .gray-container a, .gglass .widget_calendar #wp-calendar th, .gglass .content-title, .gglass .content-title a ,.gglass #reply-title {
 	color:#fff;
@@ -5166,7 +5171,7 @@ iframe .fbFeedbackContent.fbDarkWidget .composer{
     100% { opacity:0.1;}
 }
 .blink {
-    -webkit-animation: blink 1.8s linear infinite;
+    -webkit-animation: blink 1.8s linear infinite;/*blink animation here- 4vR*/
     -moz-animation: blink 1.8s linear infinite;
     animation: blink 1.8s linear infinite;
 } 
