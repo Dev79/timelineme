@@ -37,7 +37,7 @@ $vc_read_comm = of_get_option('vc-read-comm', 'show comments');
 ?>
 <script>
 jQuery(document).ready(function($){
-	//check for voice recognition
+	//checkn for voice recognition
 	//==================================================
 	if (!annyang) {
 		$('#tt-voice-c').css("display","none");
@@ -73,18 +73,18 @@ jQuery(document).ready(function($){
 			window.gokb='';
 			<?php if(of_get_option('active-voicecontrol', '1' ) =='1'){ ?> 
 			if (annyang) {
-				//share on twitter 
+				//tweet
 				//==================================================
 				var commands = {
 					'<?php echo $vc_share_tw;?>': function() {	
 						 window.open($(".bespoke-active a.share-three").attr("rel"),'_blank', 'width=550,height=420');
 					},
-					//share on facebook
+					//share-facebook
 					//==================================================
 					'<?php echo $vc_share_fb;?>': function() {
 							 window.open($(".bespoke-active a.share-two").attr("rel"),'_blank', 'width=600,height=400');
 					},
-					//open big image
+					//open big img
 					//==================================================
 					'<?php echo $vc_open_img;?>': function() {
 						if($(".bespoke-active a.voice-bigimage").attr("href")){
@@ -93,7 +93,7 @@ jQuery(document).ready(function($){
 						  $.prettyPhoto.open(api_images);
 						}
 					},
-					//close big image
+					//close big img
 					//==================================================
 					'<?php echo $vc_close;?>': function() {
 						$.prettyPhoto.close();
@@ -108,7 +108,7 @@ jQuery(document).ready(function($){
 					'<?php echo $vc_slide_prev;?>': function() {
 					  deck.prev();
 					},
-					//go to beginig of the timeline
+					//go to begining of the timeline
 					//==================================================
 					'<?php echo $vc_scroll_back;?>': function() {
 					  deck.slide(0);
@@ -146,13 +146,13 @@ jQuery(document).ready(function($){
 						}
 					}
 				};
-				//languige of the voice control listener
+				//language of the voice control listener
 				//==================================================
 				annyang.setLanguage('<?php echo $vc_set_lang;?>');
 				annyang.init(commands);
 				annyang.debug();				
 						
-				//enable / disable voice control (using cookie)		
+				//enable / disable voice control using cookie		
 				//==================================================			
 				var isone = ''
 				$(function() {
@@ -251,7 +251,7 @@ jQuery(document).ready(function($){
 		
 		var whichtehem = "<?php if( of_get_option('scroll-effect') != ''){echo of_get_option('scroll-effect');}else{ echo '0';};?>";
 	}
-	//Display wellcome buble (use cookie to show only once
+	//Display welcome bubble use cookie to show only once
 	//==================================================
 	function initInstructions() {
 		if (isTouch()) {
@@ -307,7 +307,7 @@ jQuery(document).ready(function($){
 		setCookie('welcomemsg','1', 1);	
 		<?php };?>
 	}
-	//Small bottom navigation
+	//Small bottom nav or menu
 	//==================================================
 	function initButtons() {
 		document.getElementById('next-arrow').addEventListener('click', gonext);
@@ -344,7 +344,7 @@ jQuery(document).ready(function($){
 			}
 		});
 	}
-	//Keyboard navigation
+	//Keyboard nav
 	//==================================================
 	function initKeys(e) {
 		
@@ -395,8 +395,8 @@ jQuery(document).ready(function($){
 			};
 		document.addEventListener('keydown', gokb);
 	}
-	//Animate post on read more click
-	//==================================================
+	//Animate post on read more click- this is where we want to work on 4vR, CHNG: Opacity & Duration
+	//////////////////////////
 	function selectactive(storyId){
 		var contentholder = document.getElementsByClassName("bespoke-active")[0];
 		var allholder = document.getElementsByClassName("bespoke-parent")[0];

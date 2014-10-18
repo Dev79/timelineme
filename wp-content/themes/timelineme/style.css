@@ -1446,7 +1446,7 @@ section.bespoke-active {
 	top:100px;	
 }
 /*####################################################*/
-/*** CLASSIC TILT THEME ***/
+/*** timeline path styling ***/
 /*####################################################*/
 .timelinepath{
 	left:110%;/*stack order, 4vR*/
@@ -1455,27 +1455,27 @@ section.bespoke-active {
 }
 
 .timelinepath:before{
-	content:'';
+	content:"";
 	width:50%;
 	z-index:-15!important;/*stack order, 4vR*/
 	left:-0%; /*stack order, 4vR*/
 	height:110%;
-	background:#0033FF;/*000*/
+	background:#000;/*chng to rgba 4vR*/
 	position:fixed;
 	margin-left:25%;
 	bottom:-20%;
-	transform: perspective( 500px ) rotateX(80deg);/*  translateY(-130px); -130 za ie */
+	transform: perspective( 500px ) rotateX(75deg);/*  translateY(-130px); -130 za ie */
 	-webkit-transform-style: preserve-3d;
-	-webkit-transform: perspective( 500px ) rotateX(80deg) translateY(30px);
-	-moz-transform: perspective( 500px ) rotateX(80deg) ;
-	-ms-transform: perspective( 500px ) rotateX(80deg) translateY(-130px);
-	-o-transform: perspective( 500px ) rotateX(80deg);
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s linear;
-	-ms-transition: all 0.5s linear;
-	-o-transition: all 0.5s linear;
-	transition: all 0.5s ease;
-	background: rgba(0, 0, 0, 0.4);
+	-webkit-transform: perspective( 500px ) rotateX(75deg) translateY(30px);
+	-moz-transform: perspective( 500px ) rotateX(75deg) ;
+	-ms-transform: perspective( 500px ) rotateX(75deg) translateY(-130px);
+	-o-transform: perspective( 500px ) rotateX(75deg);
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s linear;
+	-ms-transition: all 0.6s linear;
+	-o-transition: all 0.6s linear;
+	transition: all 0.6s ease;
+	background: rgba(60, 0, 5, 0.8);
 	background: -moz-linear-gradient(top,  rgba(0, 0, 255, 0.8) 50%, rgba(0, 0, 255, 0.6) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.0)), color-stop(100%,rgba(0, 0, 0, 0.90)));
 	background: -webkit-linear-gradient(top,  rgba(0, 0, 0, 0.0) 20%,rgba(0, 0, 0, 0.90) 100%);
@@ -1486,8 +1486,8 @@ section.bespoke-active {
 .no-csstransforms3d .timelinepath:before{
 	width:80%;
 	height:100%;
-	background:#fff;
-	opacity:0.3;
+	background:rgba(0, 0, 0, 0.3);/*chng to blue 4vR*/
+	/*opacity:0.3;*/
 	margin-left:10%;
 	bottom:0%;
 }
@@ -2499,7 +2499,7 @@ ul ul .turquoise.current_page_item, ul li .turquoise.current-menu-item, .nav ul 
 /*####################################################*/
 /*** GREEN SEA COLOR SCHEME ***/
 /*####################################################*/
-.greensea .tt-arrow-dot{
+/*.greensea .tt-arrow-dot{
 	background:rgba(78,183,163, 0.2)!important;
 }
 .greensea .tt-arrow-dot:after{
@@ -2621,6 +2621,8 @@ ul ul .greensea.current_page_item, ul li .greensea.current-menu-item, .nav ul li
 .greensea .no-content {
 	border-bottom: 3px solid rgba(78,183,163, 0.8);
 }
+*/
+
 /*####################################################*/
 /*** EMERALD COLOR SCHEME ***/ 
 /*####################################################*/
@@ -3382,7 +3384,7 @@ ul ul .belizehole.current_page_item, ul li .belizehole.current-menu-item, .nav u
 /*####################################################*/
 /*** SUN FLOWER COLOR SCHEME ***/
 /*####################################################*/
-.sunflower .tt-arrow-dot{
+/*.sunflower .tt-arrow-dot{
 	background:rgba(244,210,72, 0.2)!important;
 }
 .sunflower .tt-arrow-dot:after{
@@ -3504,10 +3506,12 @@ ul ul .sunflower.current_page_item, ul li .sunflower.current-menu-item, .nav ul 
 .sunflower .no-content {
 	border-bottom: 3px solid rgba(244,210,72, 0.8);
 }
+*/
+
 /*####################################################*/
 /*** ORANGE COLOR SCHEME ***/
 /*####################################################*/
-.orange .tt-arrow-dot{
+/*.orange .tt-arrow-dot{
 	background:rgba(246,180,74, 0.2)!important;
 }
 .orange .tt-arrow-dot:after{
@@ -3629,6 +3633,7 @@ ul ul .orange.current_page_item, ul li .orange.current-menu-item, .nav ul li.ora
 .orange .no-content {
 	border-bottom: 3px solid rgba(246,180,74, 0.8);
 }
+
 /*####################################################*/
 /*** CARROT COLOR SCHEME ***/ 
 /*####################################################*/
@@ -3757,7 +3762,7 @@ ul ul .carrot.current_page_item, ul li .carrot.current-menu-item, .nav ul li.car
 /*####################################################*/
 /*** PUMPKIN COLOR SCHEME ***/
 /*####################################################*/
-.pumpkin .tt-arrow-dot{
+/*.pumpkin .tt-arrow-dot{
 	background:rgba(236,158,87, 0.2)!important;
 }
 .pumpkin .tt-arrow-dot:after{
@@ -3879,23 +3884,25 @@ ul ul .pumpkin.current_page_item, ul li .pumpkin.current-menu-item, .nav ul li.p
 .pumpkin .no-content {
 	border-bottom: 3px solid rgba(221,125,60, 0.8);
 }
+*/
 /*####################################################*/
 /*** WET ASPHALT COLOR SCHEME  TASIRA PANO 4VR FRIDAY, white issue, major blue***/ 
 /*####################################################*/
+/*
 .wetasphalt .tt-arrow-dot{
-	background:rgba(0,0,255,0.3)!important;/*101,117,133, 0.2, grey*/
+	background:rgba(101,117,133, 0.2)!important;
 }
 .wetasphalt .tt-arrow-dot:after{
-	background:rgba(0,0,255,0.2)!important;/*0.1, 4vR*/
+	background:rgba(0,0,55, 0.1)!important;
 }
 .wetasphalt .timedate, .wetasphalt .tt-arrow-dot:before, .wetasphalt .share-btna{
-	background: #fff;
+	background: #000;
 }
 .wetasphalt .tt-arrow-side {
-	border-color: rgba(0,0,255,0.9) transparent transparent transparent;/*0.8, 4vR*/
+	border-color: rgba(0,0,255,0.9) transparent transparent transparent;
 }
 .wetasphalt .widgttl, .gglass h4.wetasphalt.wpb_toggle, .gglass .wetasphalt h3.wpb_accordion_header, .gglass .wetasphalt .wpb_tabs_nav li.ui-state-active a, .gglass .wetasphalt .wpb_tab{
-	background-color: #6666FF!important;/*657585*/
+	background-color: #6666FF!important;
 	
 }
 .wetasphalt .share-action, .wetasphalt .sbleft .gray-container a, .disquis_h .wetasphalt a, .wetasphalt .sbright .gray-container a, .wetasphalt .widget_calendar #wp-calendar th, .wetasphalt .content-title, .wetasphalt .content-title a ,.wetasphalt #reply-title {
@@ -3928,7 +3935,7 @@ ul ul .pumpkin.current_page_item, ul li .pumpkin.current-menu-item, .nav ul li.p
 	font-weight:300!important;
 }
 .wetasphalt .time-holder, .wetasphalt .cat-holder, .wetasphalt .user-holder{
-	border-color:rgba(0,0,255,0.4);/*0.3*/
+	border-color:rgba(0,0,255,0.4);
 }
 .wetasphalt .share-action {
 	border-left-color: rgba(0,0,255,0.4);
@@ -4005,6 +4012,7 @@ ul ul .wetasphalt.current_page_item, ul li .wetasphalt.current-menu-item, .nav u
 .wetasphalt .no-content {
 	border-bottom: 3px solid rgba(101,117,133, 0.8);
 }
+*/
 /*####################################################*/
 /*** MIDNIGHT BLUE COLOR SCHEME ***/ 
 /*####################################################*/
@@ -4131,7 +4139,7 @@ ul ul .midnightblue.current_page_item, ul li .midnightblue.current-menu-item, .n
 	border-bottom: 3px solid rgba(86,101,108, 0.8);
 }
 /*####################################################*/
-/*** ALIZARIN COLOR SCHEME ***/ 
+/*** ALIZARIN WHITE COLOR SCHEME ***/ 
 /*####################################################*/
 .alizarin .tt-arrow-dot{
 	background:rgba(238,119,107, 0.2)!important;
@@ -4263,7 +4271,7 @@ h4.alizarin.wpb_toggle{
 /*####################################################*/
 /*** POMEGRANATE COLOR SCHEME ***/ 
 /*####################################################*/
-.pomegranate .tt-arrow-dot{
+/*.pomegranate .tt-arrow-dot{
 	background:rgba(208,104,94, 0.2)!important;
 }
 .pomegranate .tt-arrow-dot:after{
@@ -4385,6 +4393,8 @@ ul ul .pomegranate.current_page_item, ul li .pomegranate.current-menu-item, .nav
 .pomegranate .no-content {
 	border-bottom: 3px solid rgba(208,104,94, 0.8);
 }
+*/
+
 /*####################################################*/
 /*** CONCRETE COLOR SCHEME ***/ 
 /*####################################################*/
@@ -5163,17 +5173,18 @@ iframe .fbFeedbackContent.fbDarkWidget .composer{
 }
 @keyframes blink {  
     0% { opacity:1;}
-    100% { opacity:0.1;}
+    100% { opacity:0;}/*4vR, blink disappears completely*/
 	
 }
 @-webkit-keyframes blink {
     0% { opacity:1;}
-    100% { opacity:0.1;}
+    100% { opacity:0;}/*4vR, blink disappears completely*/
+
 }
 .blink {
-    -webkit-animation: blink 1.8s linear infinite;/*blink animation here- 4vR*/
-    -moz-animation: blink 1.8s linear infinite;
-    animation: blink 1.8s linear infinite;
+    -webkit-animation: blink 2.5s ease-in-out infinite;/*blink animation here- 4vR*/
+    -moz-animation: blink 2.5s ease-in-out infinite;
+    animation: blink 2.5s ease-in-out infinite;
 } 
 
 section:before{
@@ -5921,7 +5932,8 @@ audio {
 }
 .loading:after, div.dark_square .pp_loaderIcon {
 	border-width: 0 3px 0 0;
-	border-style: solid;
+	/*border-style: solid;*/
+	border-radius: 25px;
 	border-color: rgba(255, 255, 255, .5);
 	border-radius: 50%;
 	display: block;
