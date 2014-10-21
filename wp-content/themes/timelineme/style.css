@@ -638,16 +638,16 @@ a {
 	margin-left:22px;
 	-webkit-backface-visibility: hidden;
 	width: 380px;
-	height: 390px;
+	height: 380px;
 	left: 50%;
 	margin-left: -190px;
 	position: relative;
 	opacity:0.9;
 }
-/* tova e za strelkite*/
+
 .circle-img{
-	width:380px; 
-	height:390px; 
+	width:380px; /*chng*/
+	height:380px; 
 }
 .ch-grid:after, .ch-item:before {
 	content: '';
@@ -674,7 +674,7 @@ a {
 .ch-item {
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;/*circ*/
+	border-radius: 15%;/*circ*/
 	position: relative;
 	cursor: default;
 }
@@ -1459,23 +1459,24 @@ section.bespoke-active {
 /*####################################################*/
 /*** timeline path styling will look at 3D***/
 /*####################################################*/
-/*.timelinepath{
+.timelinepath{
 	left:110%;
 	position:fixed;
 	z-index:-10!important;
 }
-*/
-.timelinepath /*1st bg*/
+
+/****3D FLAP, LIKE A SIGN POST****/
+/*.timelinepath /*1st bg
 {
 	transform:perspective(1000px);
 	transform-style: perserve-3d;
 }
-.timelinepath/*2nd bg*/
+.timelinepath/*2nd bg*
 {
 	transform:perspective(1000px);
 	transform-style: perserve-3d;
-}
-/*using transform and transition*/
+}*/
+/*using transform and transition*
 .timelinepath:before {
 position: absolute;
 border: 5px solid #ffffff;
@@ -1490,38 +1491,47 @@ transform: rotateY(0deg);
 transition: 1s;
 text-shadow: 0px 0px 20px #ffffff;
 }
+*/
 
+.timelinepath:before{
+	/*GPU Acceleration*/
+	-webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
 
-/*.timelinepath:before{
+	/*GPU Code end*/
 	content:"";
 	width:50%;
-	z-index:-15!important;/*stack order, 
+	z-index:-15!important;
 	left:-0%; 
 	height:110%;
 	background:#000;
 	position:fixed;
 	margin-left:25%;
 	bottom:-20%;
-	transform: perspective( 500px ) rotateX(75deg);
+
+	transform: perspective( 500px ) rotateY(75deg);
 	-webkit-transform-style: preserve-3d;
 	-webkit-transform: perspective( 500px ) rotateX(75deg) translateY(30px);
-	-moz-transform: perspective( 500px ) rotateX(75deg) ;
-	-ms-transform: perspective( 500px ) rotateX(75deg) translateY(-130px);
+	-moz-transform: perspective( 500px ) rotateX(75deg);
+	-ms-transform: perspective( 500px ) rotateX(75deg); /*translateY(-130px);*/
 	-o-transform: perspective( 500px ) rotateX(75deg);
 	-webkit-transition: all 0.6s ease;
 	-moz-transition: all 0.6s linear;
 	-ms-transition: all 0.6s linear;
 	-o-transition: all 0.6s linear;
 	transition: all 0.6s ease;
-	background: rgba(60, 0, 5, 0.8);
+	/*background: rgba(60, 0, 5, 0.8);
 	background: -moz-linear-gradient(top,  rgba(0, 0, 255, 0.8) 50%, rgba(0, 0, 255, 0.6) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.0)), color-stop(100%,rgba(0, 0, 0, 0.90)));
 	background: -webkit-linear-gradient(top,  rgba(0, 0, 0, 0.0) 20%,rgba(0, 0, 0, 0.90) 100%);
 	background: -o-linear-gradient(top,  rgba(0, 0, 0, 0.0) 0%,rgba(0, 0, 0, 0.9) 100%);
 	background: -ms-linear-gradient(top,  rgba(0, 0, 0, 0.0) 0%,rgba(0, 0, 0, 0.9) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 0, 0, 0.0)', endColorstr='rgba(0, 0, 0, 0.9)',GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 0, 0, 0.0)', endColorstr='rgba(0, 0, 0, 0.9)',GradientType=0 );*/
 }
-*/
+
 /*
 .no-csstransforms3d .timelinepath:before{
 	width:80%;
@@ -2366,7 +2376,7 @@ ol.tags li a{
 }
 
 /*####################################################*/
-/*** Arrows ***/
+/*** Inverted Triangle ***/
 /*####################################################*/
 .left-content .tt-arrow-side {
 	position:absolute;
@@ -2374,10 +2384,22 @@ ol.tags li a{
 	left:22%;
 	margin-left:-16px;
 	z-index:2;
+	/*using a pole instead of triangle
+	background: #555;
+	height:25px;
+	width: 0px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+	box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);*/
+
 	width: 0px;
 	height: 0px;
 	border-style: solid;
-	border-width: 44px 15px 0 15px;
+	border-width: 44px 15px 0 15px;*/
 	border-color: rgba(0,0,0,0.5) transparent transparent transparent;
 }
 .right-content .tt-arrow-side {
