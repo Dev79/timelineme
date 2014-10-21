@@ -253,7 +253,7 @@ jQuery(document).ready(function($){
 	}
 	//Display welcome bubble use cookie to show only once
 	//==================================================
-	/*function initInstructions() {
+	function initInstructions() {
 		if (isTouch()) {
 			$('body').addClass('forios');
 		}
@@ -306,7 +306,7 @@ jQuery(document).ready(function($){
 		
 		setCookie('welcomemsg','1', 1);	
 		<?php };?>
-	}*/
+	}
 	//Small bottom nav or menu
 	//==================================================
 	function initButtons() {
