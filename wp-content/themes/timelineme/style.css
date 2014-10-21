@@ -1512,18 +1512,18 @@ text-shadow: 0px 0px 20px #ffffff;
 	margin-left:25%;
 	bottom:-20%;
 
-	transform: perspective( 500px ) rotateY(75deg);
+	transform: perspective( 700px ) rotateY(75deg);
 	-webkit-transform-style: preserve-3d;
 	-webkit-transform: perspective( 500px ) rotateX(75deg) translateY(30px);
-	-moz-transform: perspective( 500px ) rotateX(75deg);
-	-ms-transform: perspective( 500px ) rotateX(75deg); /*translateY(-130px);*/
-	-o-transform: perspective( 500px ) rotateX(75deg);
-	-webkit-transition: all 0.6s ease;
-	-moz-transition: all 0.6s linear;
-	-ms-transition: all 0.6s linear;
-	-o-transition: all 0.6s linear;
-	transition: all 0.6s ease;
-	/*background: rgba(60, 0, 5, 0.8);
+	-moz-transform: perspective( 700px ) rotateX(75deg);
+	-ms-transform: perspective( 700px ) rotateX(75deg) translateY(-130px);
+	-o-transform: perspective( 7000px ) rotateX(75deg);
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s ease;
+	background: rgba(60, 0, 5, 0.8);
 	background: -moz-linear-gradient(top,  rgba(0, 0, 255, 0.8) 50%, rgba(0, 0, 255, 0.6) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.0)), color-stop(100%,rgba(0, 0, 0, 0.90)));
 	background: -webkit-linear-gradient(top,  rgba(0, 0, 0, 0.0) 20%,rgba(0, 0, 0, 0.90) 100%);
