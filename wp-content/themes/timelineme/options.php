@@ -454,13 +454,13 @@ asort($typography_mixed_fonts);
 	$options[] = array(
 		'name' => __('Welcome message', 'options_check'),
 		'desc' => __('Activate welcome/info message to new visitors.', 'options_check'),
-		'id' => 'wellcome-msg',
+		'id' => 'welcome-msg',
 		'std' => '1',
 		'type' => 'checkbox');
 	$options[] = array(
 
 		'desc' => __('Add welcome/info message to new visitors', 'options_check'),
-		'id' => 'wellcome-msg-text-hidden',
+		'id' => 'welcome-msg-text-hidden',
 		'std' => '<span class="content-title">Welcome</span>
 <span id="input-method">You can navigate trough the site by:</span><br /><br /><br /><div class="mouseico"></div>',
 		'class' => 'hidden',
