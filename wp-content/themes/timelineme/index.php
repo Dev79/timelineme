@@ -572,7 +572,7 @@ jQuery(document).ready(function($){
 		};
 		window.addtuch();
 	}
-	//Show hide wellcome bubble
+	//Show hide welcome bubble
 	//==================================================
 	function showInstructions() {
 		$('#ss-container').addClass('addblur');
