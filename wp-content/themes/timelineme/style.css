@@ -5113,6 +5113,74 @@ iframe .fbFeedbackContent.fbDarkWidget .composer{
 	transform: translate3d(0px, 0px, 0px); 
 }*/
 #vs {
+	background-color: #eaf8fc;
+    background-image: linear-gradient(#fff, #d4e8ec);
+    border-radius: 5px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;            
+    width: auto;
+    height: 35px;
+    padding: 10px;
+    /*margin: 100px auto 50px;*/
+    overflow: hidden; /* Clear floats*/ 
+}
+/*Input styling*/
+#s, 
+#submit {
+    float: left;
+}
+
+#s {
+    padding: 5px 9px;
+    height: 30px;
+    width: 380px;
+    border: 1px solid #a4c3ca;
+    font: normal 15px 'trebuchet MS', verdana, arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+/* ----------------------- */
+
+#submit
+{       
+    background-color: #6cbb6b;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 50px 50px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 35px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    width: 90px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+
+/*#vs {
 	width: auto;   
     height: 50px;   
     background: #f2f2f2;   
@@ -5126,7 +5194,7 @@ iframe .fbFeedbackContent.fbDarkWidget .composer{
     -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8), inset 0 2px 2px rgba(255, 255, 255, 1), 0 5px 0 #ccc, 0 6px 0 #989898, 0 13px 0 #dfdede;   
     box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8), inset 0 2px 2px rgba(255, 255, 255, 1), 0 5px 0 #ccc, 0 6px 0 #989898, 0 13px 0 #dfdede;*/   
 }  
-/*styling text input field for vs*/
+/*styling text input field for vs*
 input[type="text"] {   
     float: left;   
     width: 350;   
@@ -5138,7 +5206,7 @@ input[type="text"] {
     -moz-border-radius: 5px;   
     -webkit-border-radius: 5px;   
     border-radius: 5px;       
-}
+}*/
 /*styling submit button, vs*
 input[type="submit"].solid { 
 	float: left; 
