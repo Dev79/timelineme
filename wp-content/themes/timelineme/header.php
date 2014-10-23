@@ -63,10 +63,12 @@ if ( is_singular() && get_option( 'thread_comments' ) )
 </form>
 <!--vs end-->
 <!--adding voice search-->
+<!--<section id="wrapper">-->
 <form id="searchform" action="<?php bloginfo('home'); ?>/" method="get">
 <div id="vs"><input id="s" name="s" size="20" type="text" value="<?php _e('Search') ?>..." x-webkit-speech speech onwebkitspeechchange="this.form.submit();" />
 </div>
 </form>
+
 <!--search end-->
 </head>
 
