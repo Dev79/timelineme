@@ -62,12 +62,12 @@ if ( is_singular() && get_option( 'thread_comments' ) )
  <input type="submit" value="Google Search" />
 </form>
 <!--vs end-->
-<!--adding voice search-->
+<!--adding voice search, OLD CODE-->
+
 <form id="searchform" action="<?php bloginfo('home'); ?>/" method="get">
-<div id="vs"><input id="s" name="s" size="30" type="text" value="<?php _e('Voice Search') ?>..." x-webkit-speech speech onwebkitspeechchange="this.form.submit();" />
+<div id="vs"><input id="s" name="s" size="30" type="text" value="<?php _e('Voice Search') ?>..." x-webkit-speech="true" speech onwebkitspeechchange="this.form.submit();" />
 </div>
 </form>
-
 <!--search end-->
 </head>
 

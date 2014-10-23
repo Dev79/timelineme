@@ -99,7 +99,7 @@ jQuery(document).ready(function($){
 					'<?php echo $vc_slide_prev;?>': function() {
 					  deck.prev();
 					},
-					//go to beginig of the timeline
+					//go to the beginning of the timeline
 					//==================================================
 					'<?php echo $vc_scroll_back;?>': function() {
 					  deck.slide(0);

@@ -16,6 +16,9 @@ function ab_tf_timetravel_setup() {
 	//Custom background support
 	add_theme_support( 'custom-background'); 
 
+	//htnl5 search support
+	add_theme_support( 'html5', array ( 'search-form' ) );
+
 	//Enable post and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
 	
@@ -214,12 +217,12 @@ function optionsframework_custom_scripts() { ?>
 				jQuery("#section-example_text_hidden").show();
 			}
 			
-			jQuery("#wellcome-msg").click(function() {
-				jQuery("#section-wellcome-msg-text-hidden").fadeToggle(400);
+			jQuery("#welcome-msg").click(function() {
+				jQuery("#section-welcome-msg-text-hidden").fadeToggle(400);
 			});
 			
-			if (jQuery("#wellcome-msg:checked").val() !== undefined) {
-				jQuery("#section-wellcome-msg-text-hidden").show();
+			if (jQuery("#welcome-msg:checked").val() !== undefined) {
+				jQuery("#section-welcome-msg-text-hidden").show();
 			}
 			
 		});

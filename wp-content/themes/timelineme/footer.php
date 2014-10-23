@@ -14,8 +14,8 @@
 <?php
 //TRANSLATION VARS
 //=====================================================
-$vc_tt_title = of_get_option('vc-tt-title','Voice Control');
-$vc_tt_info = of_get_option('vc-tt-info', '<br>Listed below are the available voice commands <br> 
+$vc_tt_title = of_get_option('vc-tt-title','Voice Browsing Options');
+$vc_tt_info = of_get_option('vc-tt-info', '<br>Available voice commands <br> 
 <p><i class="icon-microphone"></i><strong>Homepage</strong> - go to homepage<br>
 <i class="icon-microphone"></i><strong>Next</strong> - slide to next post<br>
 <i class="icon-microphone"></i><strong>Previous</strong> - slide to previous post<br>
