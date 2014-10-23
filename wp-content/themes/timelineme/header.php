@@ -48,7 +48,7 @@ if(is_single() && has_post_thumbnail() || is_page() && has_post_thumbnail() ) {
 	window.onunload = function(){}; 
 </script>
 <?php  ?>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="gtext/html; charset=UTF-8">
 <?php
 if ( is_singular() && get_option( 'thread_comments' ) )
 	wp_enqueue_script( 'comment-reply' );
@@ -58,13 +58,13 @@ if ( is_singular() && get_option( 'thread_comments' ) )
 ?>
 <!--voice search-->
 	<form method="get" action="http://www.google.com/search">
- <input type="text" name="q" size="30" x-webkit-speech />
+ <input type="text" name="q" size="30" x-webkit-speech="true" />
  <input type="submit" value="Google Search" />
 </form>
-
-<!--adding search
+<!--vs end-->
+<!--adding search-->
 <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-<div><input type="text" -x-webkit-speech size="18" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
+<div><input type="text" x-webkit-speech="true" size="18" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
 <input type="submit" id="searchsubmit" value="Search" class="btn" />
 </div>
 </form>
