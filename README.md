@@ -13,7 +13,7 @@ TimelineMe was inspired by mainly by the importance of non-linear story telling 
 
 However, their wordpress plugin uses Google Docs to create the stories, which might not be as easy to use for some content producers. I was looking for a solution that allows content producers to create compelling content within a Content Management System. I opted for wordpress since it's a platform that we use in the Media House that i currently work for. In addition to that wordpress has got more than 60million websites and blogs which makes it one of the most popular platforms for content creation.
 
-The key features of my project include: easy navigation, interactive content and sliders, mobile friendly views. The base code also has voice recognition but, I am working on something better in terms of code application and resource usage.
+The key features of my project include: easy navigation, interactive content and sliders, mobile friendly views. The base code also has voice recognition and voice search, which i takes non-linear navigation to new levels. Note: voice search only works in Chrome 11 and later for now. Other browsers are yet to support it.
 
 
 ## Installation
