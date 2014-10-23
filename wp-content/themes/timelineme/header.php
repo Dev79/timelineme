@@ -56,6 +56,19 @@ if ( is_singular() && get_option( 'thread_comments' ) )
 	wp_get_archives('type=monthly&format=link');
 	wp_head();
 ?>
+<!--voice search-->
+	<form method="get" action="http://www.google.com/search">
+ <input type="text" name="q" size="30" x-webkit-speech />
+ <input type="submit" value="Google Search" />
+</form>
+
+<!--adding search
+<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+<div><input type="text" -x-webkit-speech size="18" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" class="btn" />
+</div>
+</form>
+<!--search end-->
 </head>
 
 <body <?php body_class();?>>
@@ -63,7 +76,7 @@ if ( is_singular() && get_option( 'thread_comments' ) )
 	if( of_get_option('active-backgroud-video', '0' ) != '1' && of_get_option('active-background', '0' ) != '1'){?> 
     	<div id="site-background"></div> <?php 
 	};
-	if(of_get_option('wellcome-msg', '1' ) =='1'){ ?>
+	if(of_get_option('welcome-msg', '1' ) =='1'){ ?>
 		<header>
 			<div class="hidden welcome-b"><?php echo of_get_option('welcome-msg-text-hidden', '<span class="content-title">Welcome to TimelineMe</span>
 <span id="input-method">You can navigate through the site by:</span><br /><br /><br /><div class="mouseico"></div>' ); ?></div>
@@ -155,7 +168,7 @@ if ( is_singular() && get_option( 'thread_comments' ) )
 					<!--span class="no-csstransforms">CSS transforms are not supported in your browser</span-->
 					<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
 					<!--span class="no-csstransitions">CSS transitions are not supported in your browser</span-->
-                <span class="note-ie"><br>We are apologize for the inconvenience but you need to download <br> more modern browser in order to be able to browse our page<br />
+                <span class="note-ie"><br>Hello, it looks like <br> you'll need a modern browser to browse this site<br />
               
                     <p class="support-note-ico ">
                         <a href="http://support.apple.com/kb/DL1531?viewlocale=en_US&amp;locale=en_US"><img src="<?php echo get_template_directory_uri(); ?>/images/support/safari.png" alt="Download Safari" width="50" height="50" /> <br>Download Safari
