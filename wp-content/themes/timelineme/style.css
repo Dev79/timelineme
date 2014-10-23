@@ -632,7 +632,7 @@ a {
 	color: #fff!important;
 }
 /*####################################################*/
-/*** CIRCLE STYLE IMG ***/
+/*** ROUNDED BOX STYLE IMG ***/
 /*####################################################*/
 .circle-img {
 	margin-left:22px;
@@ -5112,6 +5112,10 @@ iframe .fbFeedbackContent.fbDarkWidget .composer{
 	margin-left:-13px;
 	transform: translate3d(0px, 0px, 0px); 
 }*/
+#vs {
+	background: #fff; /*styling voice search, vs*/
+
+}
 .mouseico{
 	background:url(images/mouse.png) repeat top left;
 	height:71px;

@@ -56,16 +56,15 @@ if ( is_singular() && get_option( 'thread_comments' ) )
 	wp_get_archives('type=monthly&format=link');
 	wp_head();
 ?>
-<!--voice search-->
+<!--voice search-
 	<form method="get" action="http://www.google.com/search">
  <input type="text" name="q" size="30" x-webkit-speech="true" />
  <input type="submit" value="Google Search" />
 </form>
 <!--vs end-->
-<!--adding search-->
-<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-<div><input type="text" x-webkit-speech="true" size="18" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
-<input type="submit" id="searchsubmit" value="Search" class="btn" />
+<!--adding voice search-->
+<form id="searchform" action="<?php bloginfo('home'); ?>/" method="get">
+<div id="vs"><input id="s" name="s" size="20" type="text" value="<?php _e('Search') ?>..." x-webkit-speech speech onwebkitspeechchange="this.form.submit();" />
 </div>
 </form>
 <!--search end-->
