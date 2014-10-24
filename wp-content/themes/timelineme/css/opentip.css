@@ -117,8 +117,8 @@
   position: absolute;
   top: -12px;
   left: 60px;
-  color: rgba(0,0,0,0.5);
-  background: rgba(0,0,0,0);
+  color: rgba(76, 125, 231, 0.7);
+  background: rgba(76, 125, 231, 0.7);
   text-decoration: none;
 }
 .opentip-container .opentip .ot-close span {

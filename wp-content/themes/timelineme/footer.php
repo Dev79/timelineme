@@ -71,7 +71,7 @@ ob_end_clean();
         bcn_display();
     }?>
 </div>
-	<div id="tt-voice-c" class="tt-voice-c animated fadeOutH" data-ot='<h4><a href="#"><?php echo $vc_tt_title;?></a></h4><div class="vc-info"><?php echo $vc_tt_info ?></div>'  data-ot-fixed="true"  data-ot-background="rgba(0,0,0,0.7)" data-ot-border-color="rgba(0,0,0,0.8)" data-ot-offset="[ 15, -10 ]" data-ot-auto-offset="true" data-ot-tip-joint="top center" data-ot-target="true" data-ot-border-radius="0">
+	<div id="tt-voice-c" class="tt-voice-c animated fadeOutH" data-ot='<h4><a href="#"><?php echo $vc_tt_title;?></a></h4><div class="vc-info"><?php echo $vc_tt_info ?></div>'  data-ot-fixed="true"  data-ot-background="rgba(83, 201, 255, 0.7)" data-ot-border-color="rgba(0,0,0,0.8)" data-ot-offset="[ 15, -10 ]" data-ot-auto-offset="true" data-ot-tip-joint="top center" data-ot-target="true" data-ot-border-radius="0">
 		<i id="vocie-control" class="icon-microphone-off navkey"></i> 
     </div>
     
