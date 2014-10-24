@@ -1349,6 +1349,11 @@ header .welcome-b {
 header .content-title{
 	color:#fff;
 }
+}
+header .tt-voice-c{
+	color:#f8f8f8;
+}
+
 header .welcome-b.visible {
 	opacity: 0.6;
 	display:block;

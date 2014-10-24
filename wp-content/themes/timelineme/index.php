@@ -120,7 +120,7 @@ jQuery(document).ready(function($){
 					},
 					//search
 					//==================================================
-					'<?php echo $vc_search_for;?> *search':function(tag) {
+					'<?php echo $vc_search_for;?> *search':function(tag) { //VOICE SEARCH OLD
 						window.open("<?php echo home_url()."?s="; ?>"+tag,"_self");
 					},
 					//open post
