@@ -79,7 +79,7 @@ if ( is_singular() && get_option( 'thread_comments' ) )
 	if(of_get_option('welcome-msg', '1' ) =='1'){ ?>
 		<header>
 			<div class="hidden welcome-b"><?php echo of_get_option('welcome-msg-text-hidden', '<span class="content-title">Welcome to TimelineMe</span>
-<span id="input-method">You can navigate through the site by:</span><br /><br /><br /><div class="mouseico"></div>' ); ?></div>
+<span id="input-method">You can navigate through the site by: Scrolling UP & DOWN, clicking, touch as well as Voice Navigation!</span><br /><br /><br /><div class="mouseico"></div>' ); ?></div>
             
 		</header>
  		<div class="addbg"></div><?php
